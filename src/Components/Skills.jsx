@@ -3,7 +3,7 @@ const Skills = ({ data }) => {
   return (
     <div>
       <section id="skills" className="SkillsSection">
-        <h2 className="SkillsHeading">Skills</h2>
+        <h2 className="SkillsHeading">Tech Stack</h2>
         <div className="SkillsContainer">
           {data && Object.entries(data).map(([skill, icon], index) => (
             <div key={index} className="SkillCard">

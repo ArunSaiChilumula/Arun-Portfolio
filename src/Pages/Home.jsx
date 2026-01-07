@@ -1,28 +1,41 @@
 import '../CSS/Home.css'
+import Skills from '../Components/Skills.jsx'
+import Projects from '../Components/Projects.jsx'
+import Contact from '../Components/Contact.jsx'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+const Home = () => {
 
-const Home = ({ data }) => {
 
+   const [data, setData] = useState({})
+   useEffect(() => {
+     const fetchData = async () => {
+       const response = await axios.get('/data.json')
+       setData(response.data)
+     }
+     fetchData()
+   }, [])
 
-  if (!data) {
-    return (
-      <div className="LoadingWrapper">
-        <div className="LoadingAnimation"></div>
-        <p className="LoadingText">Loading data...</p>
-      </div>
-    )
-  }
+    if (!data) {
+      return (
+        <div className="LoadingWrapper">
+          <div className="LoadingAnimation"></div>
+          <p className="LoadingText">Loading data...</p>
+        </div>
+      )
+    }
+
   return (
     <div>
       {/* ================= HOME ================= */}
       <section id="home" className="HomeContainer">
         <div className="HomeContent">
-          <h1>{data.name}</h1>
-          <p>{data.role}</p>
-          <p>{data.location}</p>
-          <p>{data.experience}</p>
-          <p>{data.bio}</p>
-
-          {data.summary.map((item, index) => (
+          <h1>{data?.aboutMe?.name}</h1>
+          <p>{data?.aboutMe?.role}</p>
+          <p>{data?.aboutMe?.location}</p>
+          <p>{data?.aboutMe?.experience}</p>
+          <p>{data?.aboutMe?.bio}</p>
+          {data?.aboutMe?.summary.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
 
@@ -35,8 +48,9 @@ const Home = ({ data }) => {
 
         <img src="../assets/ProfilePhoto.png" alt="Profile" />
       </section>
-
-
+      <Skills data={data?.aboutMe?.skills} />
+      <Projects projects={data?.projects} />
+      <Contact />
     </div>
   )
 }

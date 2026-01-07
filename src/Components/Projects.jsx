@@ -1,4 +1,4 @@
-import ProjectCard from '../Components/ProjectCard'
+import ProjectCard from './ProjectCard'
 import '../CSS/Projects.css'
 
 const Projects = ({ projects }) => {

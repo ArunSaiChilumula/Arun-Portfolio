@@ -73,64 +73,6 @@
   }
 }
 
-/* ================= Interests section ================= */
-/* .InterestsSection {
-  background-color: var(--bg-color);
-  padding: 60px 20px;
-} */
-
-/* Heading */
-/* .InterestsHeading {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 700;
-  margin-bottom: 36px;
-  color: var(--text-color);
-  letter-spacing: 1px;
-  position: relative;
-} */
-
-/* .InterestsHeading::after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 4px;
-  background-color: var(--accent);
-  margin: 14px auto 0;
-  border-radius: 2px;
-} */
-
-/* Container */
-/* .InterestsContainer {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px 20px;
-  justify-content: center;
-} */
-
-/* Interest chip */
-/* .InterestCard {
-  background: transparent;
-  border: 1px solid var(--sub-text);
-  padding: 10px 18px;
-  border-radius: 999px;
-  color: var(--text-color);
-  font-size: 15px;
-  transition: all 0.25s ease;
-} */
-
-/* .InterestCard:hover {
-  background-color: var(--accent);
-  color: var(--bg-color);
-  border-color: var(--accent);
-} */
-
-/* .InterestCard p {
-  margin: 0;
-  white-space: nowrap;
-} */
 
 /* ================= Loading ================= */
 .LoadingWrapper {

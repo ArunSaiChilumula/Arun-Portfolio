@@ -47,7 +47,7 @@
         "Responsive design"
       ],
       "tech": ["React", "React Router", "CSS", "Vite"],
-      "github": "https://github.com/ArunSaiChilumula/Todo"
+      "github": "https://github.com/ArunSaiChilumula/Arun-Portfolio"
     }
 ,
     {
@@ -62,6 +62,32 @@
       ],
       "tech": ["React", "React Router", "CSS", "Vite"],
       "github": "https://github.com/ArunSaiChilumula/Todo"
+    },
+     {
+      "id": 3,
+      "title": "Hospital Management System",
+      "description": "A web-based hospital management application designed to manage patient details, appointments, and hospital workflows.",
+      "features": [
+        "Structured frontend layout for hospital modules",
+        "Form handling for patient and appointment data",
+        "Reusable UI components",
+        "Clean and organized project structure"
+      ],
+      "tech": ["Java", "Spring Boot", "REST APIs", "HTML", "CSS"],
+      "github": "https://github.com/ArunSaiChilumula/hospital"
+    },
+    {
+      "id": 4,
+      "title": "Safira UI",
+      "description": "A reusable UI component library built with React, focusing on clean design, consistency, and scalability.",
+      "features": [
+        "Reusable and modular UI components",
+        "Modern styling approach",
+        "Scalable component structure",
+        "Focus on clean and maintainable UI code"
+      ],
+      "tech": ["React", "JavaScript", "CSS"],
+      "github": "https://github.com/ArunSaiChilumula/SafiraUI"
     }
 
   ]
