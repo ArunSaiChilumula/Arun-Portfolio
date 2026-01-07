@@ -1,0 +1,119 @@
+/* ================= Navbar container ================= */
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: var(--nav-bg);
+  color: var(--text-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= Logo ================= */
+.NavContainer h1 {
+  color: var(--text-color);
+  font-size: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+}
+
+/* ================= Desktop Nav Links ================= */
+.NavLinks {
+  display: flex;
+  gap: 18px;
+}
+
+.NavLinks a {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  transition: color 0.25s ease;
+}
+
+
+
+/* ================= Hamburger ================= */
+.Hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.Hamburger span {
+  width: 26px;
+  height: 3px;
+  background-color: var(--text-color);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger animation */
+.Hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.Hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.Hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ================= Mobile styles ================= */
+@media (max-width: 768px) {
+  .Hamburger {
+    display: flex;
+  }
+
+  .NavLinks {
+    position: absolute;
+    top: 72px;
+    right: 0;
+
+    width: 100%;
+    background-color: var(--nav-bg);
+
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+
+    transition: all 0.3s ease;
+  }
+
+  .NavLinks.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}
+
+/* ================= Theme Toggle ================= */
+.ThemeToggle {
+  background: transparent;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--accent);
+  transition: all 0.25s ease;
+}
+
+.ThemeToggle:hover {
+  background-color: var(--accent);
+  color: var(--bg-color);
+}

@@ -1,0 +1,68 @@
+{
+  "aboutMe": {
+    "name": "Arun Sai Chilumula",
+    "role": "Frontend Developer",
+    "location": "India",
+    "experience": "2+ years",
+    "bio": "Frontend developer with strong hands-on experience in building responsive, performant web applications using React. Passionate about clean code, reusable components, and modern UI practices.",
+    "summary": [
+      "Strong understanding of React fundamentals and hooks",
+      "Experience building reusable and scalable components",
+      "Good knowledge of JavaScript (ES6+)",
+      "Comfortable working with REST APIs",
+      "Focused on performance and clean UI"
+    ],
+    "skills": {
+      "React": "/assets/physics.png",
+      "JavaScript": "/assets/js.png",
+       "HTML5": "/assets/html2.png",
+       "CSS3": "/assets/text.png",
+      "GitHub":"/assets/github2.png",
+      "Java": "/assets/java2.png",
+      "REST APIs": "/assets/app.png",
+      "MySQL": "/assets/query-analysis.png"
+    },
+    "interests": [
+      "Frontend architecture",
+      "UI/UX best practices",
+      "Performance optimization",
+      "Learning new web technologies"
+    ],
+    "contact": {
+      "email": "arunsai@example.com",
+      "github": "https://github.com/your-github-username",
+      "linkedin": "https://linkedin.com/in/your-linkedin"
+    }
+  },
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio Website",
+      "description": "Personal portfolio website built using React to showcase projects and skills.",
+      "features": [
+        "Component-based architecture",
+        "Client-side routing using React Router",
+        "Data-driven UI using JSON",
+        "Responsive design"
+      ],
+      "tech": ["React", "React Router", "CSS", "Vite"],
+      "github": "https://github.com/ArunSaiChilumula/Todo"
+    }
+,
+    {
+      "id": 2,
+      "title": "Todo App",
+      "description": "A simple CRUD-based Todo application with clean UI and state management.",
+      "features": [
+        "Component-based architecture",
+        "Client-side routing using React Router",
+        "Data-driven UI using JSON",
+        "Responsive design"
+      ],
+      "tech": ["React", "React Router", "CSS", "Vite"],
+      "github": "https://github.com/ArunSaiChilumula/Todo"
+    }
+
+  ]
+}

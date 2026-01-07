@@ -1,0 +1,191 @@
+/* ================= Home container ================= */
+.HomeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 60px 80px;
+  /* min-height: calc(100vh - 80px); */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  gap: 40px;
+}
+
+/* Left content */
+.HomeContent {
+  max-width: 600px;
+}
+
+.HomeContent h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Role */
+.HomeContent p:nth-of-type(1) {
+  font-size: 20px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+/* Paragraphs */
+.HomeContent p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+/* Summary list */
+.HomeContent li {
+  margin-left: 18px;
+  margin-top: 6px;
+  font-size: 15px;
+  color: var(--sub-text);
+}
+
+/* Profile image */
+.HomeContainer img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 900px) {
+  .HomeContainer {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .HomeContent li {
+    list-style-position: inside;
+  }
+
+  .HomeContainer img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* ================= Interests section ================= */
+/* .InterestsSection {
+  background-color: var(--bg-color);
+  padding: 60px 20px;
+} */
+
+/* Heading */
+/* .InterestsHeading {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 36px;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  position: relative;
+} */
+
+/* .InterestsHeading::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: var(--accent);
+  margin: 14px auto 0;
+  border-radius: 2px;
+} */
+
+/* Container */
+/* .InterestsContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  justify-content: center;
+} */
+
+/* Interest chip */
+/* .InterestCard {
+  background: transparent;
+  border: 1px solid var(--sub-text);
+  padding: 10px 18px;
+  border-radius: 999px;
+  color: var(--text-color);
+  font-size: 15px;
+  transition: all 0.25s ease;
+} */
+
+/* .InterestCard:hover {
+  background-color: var(--accent);
+  color: var(--bg-color);
+  border-color: var(--accent);
+} */
+
+/* .InterestCard p {
+  margin: 0;
+  white-space: nowrap;
+} */
+
+/* ================= Loading ================= */
+.LoadingWrapper {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.LoadingAnimation {
+  width: 50px;
+  height: 50px;
+  border: 4px solid var(--sub-text);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.LoadingText {
+  color: var(--text-color);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* ================= Resume Button ================= */
+.ResumeButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--accent);
+
+  /* border: 2px solid transparent; */
+   border: 1px solid var(--accent);
+  background:
+    linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
+    linear-gradient(135deg, var(--accent), #4ade80, var(--accent)) border-box;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ResumeButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+/* ================= Animation ================= */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,134 @@
+/* ================= Section ================= */
+.ProjectsSection {
+  background-color: var(--bg-color);
+  padding: 80px 20px;
+  /* min-height: 100vh; */
+}
+
+/* ================= Heading ================= */
+.ProjectsHeading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: var(--text-color);
+  position: relative;
+}
+
+.ProjectsHeading::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: var(--accent);
+  display: block;
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+/* ================= Container ================= */
+.ProjectsContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ================= Card ================= */
+.ProjectCard {
+  background: var(--card-bg);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProjectCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+/* ================= Header ================= */
+.ProjectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.ProjectHeader h3 {
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+.ProjectHeader button {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.ProjectHeader button:hover {
+  background: var(--accent);
+  color: var(--bg-color);
+}
+
+/* ================= Description ================= */
+.ProjectDescription {
+  margin: 14px 0;
+  color: var(--sub-text);
+  line-height: 1.6;
+}
+
+/* ================= Tech stack ================= */
+.TechStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.TechBadge {
+  background: color-mix(in srgb, var(--sub-text) 20%, transparent);
+  color: var(--text-color);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+/* ================= Features ================= */
+.FeatureList {
+  margin-top: 14px;
+  padding-left: 18px;
+  color: var(--sub-text);
+}
+
+.FeatureList li {
+  margin-bottom: 6px;
+}
+
+/* ================= GitHub button ================= */
+.GitHubButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--accent);
+  border: 2px solid transparent;
+
+  background:
+    linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+    linear-gradient(135deg, var(--accent), #4ade80, var(--accent)) border-box;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.GitHubButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--accent) 45%, transparent);
+}
