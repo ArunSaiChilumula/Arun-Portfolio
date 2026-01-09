@@ -22,6 +22,10 @@
   cursor: pointer;
 }
 
+.Myname
+{
+  color: var(--accent);
+}
 /* ================= Desktop Nav Links ================= */
 .NavLinks {
   display: flex;

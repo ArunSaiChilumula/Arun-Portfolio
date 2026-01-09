@@ -22,16 +22,10 @@ const Navbar = () => {
 
   return (
     <div className="NavContainer">
-      <Link
-        to="home"
-        smooth
-        duration={500}
-        spy
-        offset={-80}
-        className="Logo"
-        onClick={closeMenu}
-      >
-        <h1>MyPortfolio</h1>
+      <Link to="home" smooth duration={500} spy offset={-80} className="Logo" onClick={closeMenu}>
+        <h1>
+          <span className='Myname'>ArunSai</span>-Portfolio
+        </h1>
       </Link>
 
       {/* Hamburger icon */}
