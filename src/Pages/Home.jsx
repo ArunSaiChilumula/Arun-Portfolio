@@ -16,7 +16,8 @@ const Home = () => {
      fetchData()
    }, [])
 
-    if (!data) {
+
+    if (!data || Object.keys(data).length === 0) {
       return (
         <div className="LoadingWrapper">
           <div className="LoadingAnimation"></div>
