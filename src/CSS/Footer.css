@@ -1,5 +1,6 @@
 .scrollToTopBtn {
-  position: absolute;
+
+  position: fixed;
   right: 20px;
   bottom: 30px;
   width: 50px;
