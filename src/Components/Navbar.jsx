@@ -5,13 +5,11 @@ import '../CSS/NavBar.css'
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const closeMenu = () => setMenuOpen(false)
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark')
 
       useEffect(() => {
-        const savedTheme = localStorage.getItem('theme') || 'dark'
-        setTheme(savedTheme)
-        document.body.setAttribute('data-theme', savedTheme)
-      }, [])
+        document.body.setAttribute('data-theme', theme)
+      }, [theme])
 
       const toggleTheme = () => {
         const newTheme = theme === 'dark' ? 'light' : 'dark'
